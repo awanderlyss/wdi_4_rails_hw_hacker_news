@@ -3,5 +3,7 @@ class Article < ApplicationRecord
   has_many :comments
 
   validates :title, presence: true
-  validates :url, url: true # Provided by "validate_url" gem
+  validates :user_id, presence: true
+  validates :body, presence: true
+
 end
